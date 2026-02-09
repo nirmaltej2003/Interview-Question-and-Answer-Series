@@ -1,0 +1,219 @@
+Java is an object-oriented programming language widely used in enterprise applications,
+Android development, and backend systems. Understanding Java fundamentals is crucial
+for acing interviews and building a strong programming foundation.
+
+--------------------------------------------------
+
+1. Is Java Platform Independent? If yes, how?
+
+Yes, Java is a platform-independent language.
+
+Java source code is compiled by the Java compiler (javac) into bytecode (.class file).
+This bytecode is not specific to any operating system or hardware.
+
+The bytecode runs on the Java Virtual Machine (JVM).
+Although JVM is platform dependent, the bytecode is the same for all platforms.
+This allows Java programs to run anywhere a compatible JVM is available.
+
+This concept is known as:
+"Write Once, Run Anywhere (WORA)"
+
+--------------------------------------------------
+
+2. What is a JVM?
+
+JVM stands for Java Virtual Machine.
+
+It is responsible for:
+- Loading bytecode
+- Verifying bytecode
+- Executing bytecode
+
+JVM is platform dependent, meaning different JVM implementations exist
+for different operating systems.
+
+JVM plays a key role in making Java platform independent.
+
+--------------------------------------------------
+
+3. What is JIT?
+
+JIT stands for Just-In-Time Compiler.
+
+It is a part of the JRE and improves Java performance at runtime.
+
+Working process:
+- Source code is compiled by javac into bytecode
+- Bytecode is passed to the JVM
+- JIT compiles frequently used bytecode into native machine code
+- JVM directly executes native code instead of interpreting bytecode
+
+This increases execution speed and performance.
+
+--------------------------------------------------
+
+4. Difference between JVM, JRE, and JDK
+
+JVM (Java Virtual Machine):
+- Part of JRE
+- Converts bytecode into machine code
+- Platform dependent
+
+JRE (Java Runtime Environment):
+- Provides an environment to run Java programs
+- Contains JVM and core libraries
+
+JDK (Java Development Kit):
+- Used to develop and run Java programs
+- Contains development tools and JRE
+
+--------------------------------------------------
+
+5. What are Memory Storages available with JVM?
+
+JVM memory areas:
+
+Class (Method) Area:
+- Stores class-level data
+- Stores runtime constant pool, methods, fields
+
+Heap:
+- Stores objects
+- Memory allocated at runtime
+
+Stack:
+- Stores method calls, local variables
+- Used during method execution
+
+Program Counter Register:
+- Stores address of currently executing instruction
+
+Native Method Stack:
+- Stores native method information
+
+--------------------------------------------------
+
+6. What is Class Loader?
+
+Class Loader is a part of JVM responsible for loading classes into memory at runtime.
+
+Responsibilities:
+- Loading: Loads .class files
+- Linking: Verifies bytecode and prepares static variables
+- Initialization: Executes static blocks and initializes static data
+
+--------------------------------------------------
+
+7. Explain public static void main(String args[]) in Java
+
+public:
+- Makes the method accessible to JVM from anywhere
+
+static:
+- Allows JVM to call the method without creating an object
+
+void:
+- Method does not return any value
+
+main:
+- Entry point of Java program
+
+String args[]:
+- Stores command-line arguments
+
+--------------------------------------------------
+
+8. What will happen if we don’t declare the main method as static?
+
+If main is not static:
+- Code compiles successfully
+- Runtime error occurs
+
+Error example:
+"Main method is not static in class Example"
+
+Reason:
+JVM cannot call a non-static method without creating an object.
+
+--------------------------------------------------
+
+9. What are Packages in Java?
+
+Packages are a group of related classes and interfaces.
+
+They provide:
+- Namespace management
+- Access protection
+
+--------------------------------------------------
+
+10. Why are Packages used?
+
+Packages are used to:
+- Avoid naming conflicts
+- Control access
+- Organize code
+- Improve maintainability
+
+--------------------------------------------------
+
+11. Advantages of Packages in Java
+
+- Prevents class name conflicts
+- Supports access control
+- Helps hide internal classes
+- Makes code easier to locate and manage
+
+--------------------------------------------------
+
+12. Types of Packages in Java
+
+Two types of packages:
+- User-defined packages
+- Built-in packages
+
+--------------------------------------------------
+
+13. Why is Java not 100% Object-Oriented?
+
+Java is not fully object-oriented because it supports
+primitive data types like:
+- int
+- char
+- boolean
+- double
+
+Primitive types are not objects.
+
+--------------------------------------------------
+
+14. What is the use of System.out.println()?
+
+Used to print output to the console.
+
+System:
+- Predefined class
+
+out:
+- Static PrintStream object
+
+println():
+- Method used to print message
+
+--------------------------------------------------
+
+15. What are Comments in Java?
+
+Comments are used to explain code.
+They are ignored by the compiler.
+
+Types of comments:
+
+Single-line comment:
+//
+
+Multi-line comment:
+/* comment */
+
+Documentation comment:
+/** comment */
